@@ -8,7 +8,19 @@ public class Korting {
 
         System.out.println("Wat is het aankoopbedrag?");
         double aankoopBedrag = userInputScanner.nextDouble();
-
+        if (aankoopBedrag <= 75) {
+            System.out.println("De klant krijgt geen korting. Het aankoopbedrag blijft " +aankoopBedrag);
+        } else if (aankoopBedrag <= 300) {
+            double percentage = (aankoopBedrag/100)*10;
+            double korting = aankoopBedrag-percentage;
+            System.out.println("De klant krijgt 10% korting. Het aankoopbedrag is nu: "+ korting);
+        }
+        else {
+            double percentage = (aankoopBedrag/100)*16;
+            double korting = aankoopBedrag-percentage;
+            System.out.println("De klant krijgt 16% korting. Het aankoopbedrag is nu: "+korting);}
+    }
+}
         /*
         Hierboven is het aankoopbedrag ingevoerd. Het is de bedoeling dat jij de korting bepaalt en het nieuwe bedrag
         uitrekent.
@@ -24,5 +36,3 @@ public class Korting {
         "De klant krijgt 16% korting. Het aankoopbedrag is nu: -HIER HET BEDRAG MET KORTING-"
          */
 
-    }
-}

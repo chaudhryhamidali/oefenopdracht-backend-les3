@@ -1,5 +1,6 @@
 package nl.novi.opdrachten.beslissingsstructuren;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Geslacht {
@@ -8,8 +9,20 @@ public class Geslacht {
 
         System.out.println("Wat is uw geslacht?");
         String geslacht = userInputScanner.nextLine();
+String a = "Dag meneer";
+String b = "Dag mevrouw";
+String c = "Dag persoon";
+        if (geslacht.equals("man")) {
+            System.out.println(a.toUpperCase());
+        } else if (geslacht.equalsIgnoreCase("vrouw")) {
+            System.out.println(b.toUpperCase());
+        } else {
+            System.out.println(c.toUpperCase());
+        }
+    }
+}
 
-        /*
+/*
         Hier boven heeft de gebruiker zijn geslacht ingevoerd. Print met behulp van een beslissingsstructuur (if/else)
         de volgende berichten:
         Wanneer de gebruiker een 'man' is: "Dag meneer."
@@ -18,7 +31,3 @@ public class Geslacht {
 
         Bonus: Lukt het je om de code zo te maken dat hoofdletters genegeerd worden?
          */
-
-    }
-
-}

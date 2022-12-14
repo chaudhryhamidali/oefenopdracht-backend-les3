@@ -16,6 +16,9 @@ public class ListOefening {
         clubNames.add("Fc Utrecht");
         clubNames.add("Fc Groningen");
         clubNames.add("FC Twente");
+        for (int i = 0;i < clubNames.size(); i++){
+            System.out.println(clubNames.get(i));
+        }
 
         // Vraag -1: Maak een methode die al taak heeft om de list per regel uit te printen.
 
